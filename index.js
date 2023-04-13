@@ -9,7 +9,7 @@ app.use(cors());
 
 const socketIO = require('socket.io')(http, {
     cors: {
-        origin: "http://localhost:3000" // replace with hosted web-app link
+        origin: "https://vc-chat-app-frontend.vercel.app/" // replace with hosted web-app link
     }
 });
 
