@@ -9,7 +9,9 @@ app.use(cors());
 
 const socketIO = require('socket.io')(http, {
     cors: {
-        origin: "https://vc-chat-app-frontend.vercel.app/" // replace with hosted web-app link
+        origin: "http://vc-chat-app-frontend.vercel.app:3000"
+        //"http://localhost:3000"
+        //http://vc-chat-app-frontend.vercel.app/
     }
 });
 
@@ -49,5 +51,5 @@ app.get('/', (req, res) => {
 });
 
 http.listen(PORT, () => {
-  console.log(`Server listening on ${PORT}`);
+  console.log(`Server listening on -> ${PORT}`);
 });
